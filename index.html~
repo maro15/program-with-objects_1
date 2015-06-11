@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+	<title> My Notes </title>
+	<link rel="stylesheet" type="text/html" href="style.css">
+    </head>
+    <body>
+	<div>
+		<h1> Introduction to Abstraction </h1>
+	</div>
+	<div class = "concept">
+	   <h2 class = "concept-title"> Abstraction </h2>
+	   <div class = "concept-description">
+		<p>   <!-- Used google and books for information -->
+		   The principle of object-oriented programming we are about to examine is "abstraction". Abstraction means working
+                   with something we know how to use without knowing how it works internally. Abstraction is one of the most 
+                   important concepts in programming and OOP. It allows us to write code, which works with abstract data structures
+                   (like dictionaries, lists, arrays and others). We can work with an abstract data type by using its interface 
+                   without concerning ourselves with its implementation. The principle of abstraction helps to reduce redundant code
+                   and create more maintainable code. Through the process of abstraction, a programmer can hide the relevent data
+                   about an object and functions in a class from other classes. It helps the programmer to build secure programs. 
+		   Even though HTML and CSS are not object oriented languages, abstract thinking is present in all of them. In HTML,
+                   head element contains data that apply to each other element (like charset) and thus do not need to be repeated.
+                   Attributes like class are then used in CSS to apply one style definition to all tags which contain that class. 
+                   This is actually quite similar to python classes which "apply" defined variables and methods to all object of that
+                   class. 
+                 </p>   
+	</div></div>	
+	<div class = "concept">
+	   <h2 class = "concept-title"> Program with object </h2>
+	   <div class = "concept-description">
+	      <p>
+		 Python has been an object-oriented language since it was developed. Because of this,
+		 creating and using classes and objects are  easy. An object-oriented program is based on
+		 classes and there exists a collection of interacting objects, as opposed to the conventional 
+                 model, in which a program consists of functions and routines. In object-oriented programmming
+                 (OOP), each object can receive messages, process data, and send messages to other objects.        
+              </p>
+		<p>
+		 Objects are key to understanding object-oriented technology. Look around right now and you'll 
+                 find many examples of real-world objects: your dog, your desk, your television set, your bicycle.
+                 Software objects are conceptually similar to real-world objects: they too consist of state and
+                 related behavior. An object stores its state in fields (variables in some programming languages) 
+                 and exposes its behavior through methods (functions in some programming languages). Methods operate 
+                 on an object's internal state and serve as the primary mechanism for object-to-object communication.
+               </p>
+		 <p>
+                Object Oriented Programming is good for large projects because it allows a couple of key benefits 
+		<ol>
+                <li> It allows programmers to associate functions in the program using plain conversational language.
+                   In OOP’s programs functions and modules that are written by a user can be reused by other users
+                   without any modification. Object created for Object Oriented Programs can easily be reused in other
+                   programs.</li>
+                <li> Repetitive functionality can be grouped in common elements and called on multiple times to reduce
+                   coding repetition, making the program easier and faster to produce. </li>
+		<li> Object Oriented Programming provides a clear modular structure for programs. It is good for 
+                   defining abstract data types. Much like CSS provides a high level framwork to use for HTML page to
+                   assist in formatting, classes in OOP can be used to define functionality that can be called on by
+                   specific instances in your program. </li>
+		</ol>
+	      </p>
+              
+	</div></div>
+        <div class = "concept">
+	   <h2 class = "concept-title"> Use Functions </h2>
+	   <div class = "concept-description">
+              <p>
+                  A function is a named container for a block of code.   If functions are groups of code, then 
+                  modules are groups of functions. We can write some program with using function and modules.
+                  To use modules, we can use either the import or the from keyword. import is the simplest and 
+                  most common keyword. There are plenty of built in modules, e.g. webbrowser, time,
+                  os (operating system) etc.
+              </p>
+	      <p> 
+                  * The webbrowser module includes functions to open URLs in interactive browser applications. 
+                  To open a page in the browser, use the open() function. The webbrowser function takes in the 
+                  link that you want to open and puts that link in quotes. When a module is first imported, 
+                  Python searches for the module and if found, it creates a module object , initializing it.
+              </p>
+              <p> 
+                  * Time module provides various time-related functions. Time module provides functions for working 
+                  with times and for converting between representations. e.g. time.sleep(secs), time.ctime([sec]) etc.
+                  time.sleep(secs) which suspends the program for a given numbers of seconds. time.ctime() shows 
+                  current time on your computer. If secs is not provided or None, the current time as returned by 
+                  time() is used. 
+              </p>
+              <p>
+                  For example:suppose, we want to write a program that says take a break after every
+                  hour to a somebody whose sits and works for long time. We can use our Python standard library
+                  modules and write a take a break program. The library contains built-in modules that provide 
+                  access to system functionality.
+	       </p>
+		   <ul>
+	                <li> import webbrowser</li>
+			<li> import time </li>
+			<li> total_breaks = 3 &nbsp; # no. of breaks in whole day </li>
+			<li> break_count = 0 
+			<li> while break_count &lt;total_breaks: 
+			<li> &nbsp;  time.sleep(10) # time in seconds 
+			<li> &nbsp;  webbrowser.open("https://www.youtube.com/watch?v=0KSOMA3QBU0") 
+                        <li> &nbsp;  break_count = break_count + 1 </li>
+  		   </ul>
+		<p>
+		   We don't know how functions open files from webbrowser,  or how the sleep function suspends the
+                   program for seconds. All those things are hidden from us and that hiding of details in programming
+                   is called <b>abstraction</b>. The idea of abstraction is really powerful in programming, because 
+                   it allows us to focus on the program that we actually want to write, and it empowers us to use 
+                   these functions simply by reading their documentations.
+                 </p>
+		<p> 
+                   * So, much like webbrowser and time, Python has another module inside it called os, which is 
+                   short for operating system. Inside os are several functions. Two of them are listdir, which lists 
+                   out all the files in a given directory, and rename, which renames a given file.
+                 </p> 
+	         <p> 
+                    TO LEARN MORE ABOUT PYTHON DOCUMENTATIONS : 
+                    <a href = "https://docs.python.org/2.7/library/index.html"> click here </a> 
+                  </p>
+       		
+	</div></div>
+	<div class = "concept">
+	   <h2 class = "concept-title"> Use Classes </h2>
+           <div class = "concept-description">
+		<p> 
+                    In some cases, functions won't quite present a very eloquent solution. Functions are great to 
+                    use when data is central to the work being done. Classes are great when you need to represent a
+                    collection of attributes and methods that will be used over and over again in other places. 
+                    Classes are a way to organize your code into generic, reusable pieces. At their best, 
+                    they are generic blueprints for things that will be used over and over again with little
+                    modification. What is needed is a way to group functions and variables that are closely related 
+                    into one place so that they can interact with each other. These problems are what a thing called
+                    object-oriented-programming solves. It puts functions and variables together in a way that they can
+                    see each other and work together, be replicated, and altered as needed, and not when unneeded. 
+                    And we use a thing called a 'class' to do this. A class is like a blueprint. It isn't something in
+                    itself, it simply describes how to make something. You can create lots of objects from that
+                    blueprint - known as an instance.
+                 </p>
+		   <h3 class = "concept-title"> Use Classes: Draw Turtles </h3>
+		<p> 
+                   There are many modules in pyhton that provide features that we can use to write program. Some
+                   of these can draw shapes and patterns, can send email,or fetch web pages etc. 
+		</p>
+		<p>  
+                   Turtle graphics is a popular way for introducing programming to kids. It was part of the original
+                   Logo programming language. Turtle is like a drawing board. It has functions like turtle.forward(...)
+                   and turtle.left(...) which can move the turtle around. Python has a library called turtle that is
+                   part of the standard python installation. To use it, you need only type: from turtle import * or
+                   import turtle <br> You can type this right in the python interpreter to experiment with turtle
+                   graphics or, better yet, include this line at the top of your program and then use turtle drawing
+                   commands in your program! In the turtle package when you run a program with turtle commands, a
+                   special window will open where the drawing will take place.
+		</p>
+		<p> 
+                   There is a module in Python called turtle with a lowercase t. The turtle module provides turtle
+                   graphics primitives, in both object-oriented and procedure-oriented ways. A class Turtle with an
+                   uppercase T. A class as a neatly packaged box, that puts things together really well. And it allows
+                   us to write code like turtle.Turtle(), which is calling a function __init__. init stands for
+                   initialize, and what it does is it creates space in memory for a new instance or a new object of the
+                   class Turtle. This instance we called brad. Brad can now acces all of the rest of the methods that
+                   are inside class Turtle like forward, left,right.
+ 		</p>
+		<ol>
+	            <li> import turtle &nbsp;&nbsp; # Allows us to use turtles </li>
+		    <li> def draw_shape(): </li>
+		    <li> &nbsp; wn = turtle.Screen() &nbsp;&nbsp;# Creates a playground for turtles </li>
+		    <li> &nbsp; brad = turtle.Turtle()&nbsp;&nbsp; # Create a turtle, assign to brad</li>
+		    <li> &nbsp; brad.forward(50) &nbsp;&nbsp; # Tell brad to move forward by 50 units </li>
+ 		    <li> &nbsp; brad.left(90)   &nbsp;&nbsp; # Tell brad to turn by 90 degrees </li>
+		    <li> &nbsp; wn.exitonclick() &nbsp;&nbsp; # Wait for user to close window </li>
+		    <li> </li>
+		    <li> draw_shape() </li>
+		</ol>
+		<p> 
+                   Here are a couple of things we will need to understand about this program.<br> The first line 
+                   tells Python to load a module named turtle. That module brings us two new types that we can use: 
+                   the Turtle type, and the Screen type. The dot notation turtle.Turtle means "The Turtle type that is
+                   defined within the turtle module" (Remember that Python is case sensitive, so the module name, with a
+                   lowercase t, is different from the type Turtle.) We then create and open what it calls a screen 
+                   (we would prefer to call it a window), which we assign to variable wn. Every window contains a
+                   canvas, which is the area inside the window on which we can draw. In line 3 we create a turtle. 
+                   The variable brad is made to refer to this turtle. So these first three lines have set things up,
+                   we are ready to get our turtle to draw on our canvas.In lines 4-5, we instruct the object brad to
+                   move, and to turn. We do this by invoking, or activating, brad's methods : these are the instructions
+                   that all turtles know how to respond to.The line 6 : it enters a state where it waits for events
+                   (like keypresses, or mouse movement and clicks). The program will terminate when the user closes the
+                   window. And Last line calling the function that draw shape.
+                 </p>
+		<p> 
+                   We know how classes group together variables and functions, known as attributes and methods, so that
+                   both the data and the code to process it is in the same spot. We can create any number of instances
+                   of that class, so that we don't have to write new code for every new object we create. To add extra
+                   features to the other classes, Python makes inheritance really easy. We define a new class, based on
+                   another, 'parent' class. Our new class brings everything over from the parent, and we can also add
+                   other things to it. If any new attributes or methods have the same name as an attribute or method in
+                   our parent class, it is used instead of the parent one.
+		</p>
+ 		     <h3 class = "concept-title"> Use Classes: Send Text </h3>
+		<p> 
+                   To send a text message using code, Twilio allows software developers to programmatically make and
+                   receive phone calls and send and receive text messages using its web service APIs. Twilio does not come
+                   with the Python standard library. Twilio is one of the thousands of external Python packages that are
+                   available to download and use. Here is a video that shows you how to manually install the Python package
+                   Twilio on your system : 
+                   <a href = "https://www.youtube.com/watch?v=OfvdONdp5GI&amp;feature=youtu.be">Twilio Install</a> 
+                   and link for <a href = "https://www.twilio.com/docs/python/install">Download</a> After download, 
+                   sign up <a href = "https://www.twilio.com/try-twilio"> here </a>
+                 </p>
+		<ol>
+		    <li> from twilio import rest <br>
+                         # Your Account Sid and Auth Token from twilio.com/user/account </li>
+  	            <li> account_sid = "AC32a3c49700934481addd5ce1659f04d2"&nbsp; # account_sid and auth_token , you will
+                                                                                    find in your account after you </li>
+		    <li> auth_token = "{{ auth_token }}"&nbsp; # signed up </li>
+	            <li> client = rest.TwilioRestClient(account_sid, auth_token)</li>
+                    <li> message = client.messages.create (</li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; body= " I love Udacity ",</li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to= " +14159352345 ",&nbsp; # Replace with your phone number which
+                                                                                    you registered with twilio </li>
+		    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from_= " +14158141829 ")&nbsp; # Replace with your Twilio number
+                                                                          which you received from twilio while sign up</li>
+                    <li> print message.sid </li>
+		</ol>
+		   <p>
+                       In first line, we use Python keyword from. Keywords in Python are reservered words that cannot be
+                       used as ordinary identifiers. from keyword explained that for importing a specific variable, class
+                       or a function from a module. So, from twilio.rest import TwilioRestClient --> telling computer is
+                       that inside Twilio, there is a folder called rest and inside that folder is a class called
+                       twiliorestclient and use that class inside our code.Now, we know that when we downloaded Twilio, we
+                       got, among other things, a folder called twilio. And inside that foler is a folder called rest.
+                       Inside rest, is a python file, which has a class called TwilioRestClient. When we say
+                       rest.TwilioRestClient(), we are calling the __init __function defined inside the class. And that
+                       creates an instance or object. We call that instance client, and then we can do stuff with that
+                       instance, like send SMSes.
+		  </p> 
+				<h3 class = "concept-title"> Use Classes: Profanity Editor </h3>
+		  <p> 
+		     How to detects curse words in a text or the draft of an email or an article? Firstly, you will have to read text
+                     from document and secondly, check this text for curse words.To read text from document, there is function in
+                     Python called open, which allows you to work with files on your computer. This function takes in the address or
+                     the location of the file you wnat to open. The Python interpreter has a number of functions built into it that
+                     are always available. Here is a list of  <a href = "https://docs.python.org/2/library/functions.html"> 
+                     Built-in-Functions </a> In this program we will use "open" module, which is a built-in function and we also use
+                     the module "urlopen" in the class "urllib"
+		  </p>
+	      <ol>
+		    <li> import urllib </li>
+                    <li> def read text(): </li>
+		    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; quotes = open("filename location which you want to check")</li>
+	            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contents_of_file = quotes.read() # allows read the contents of file</li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; quotes.close()</li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; check_profanity(contents_of_file) </li>
+			
+                    <li> def check_profanity(text_to_check):</li>
+		    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connection = urllib.urlopen(" " + text_to_check)&nbsp;# "website that check
+                                                                                                               profanity" </li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output = connection.read() </li>
+		    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; connection.close() </li>
+		    <li> read_text() </li>
+	      </ol>
+		<p>
+		   In above program, we did not import anything in our code for open function. In Python Documentation, it says that
+                   open function opens a file, returns an object of the file type.In second line, when we wrote 
+                   quotes = open(file_location)--> quotes is an object or an instance of the file. Eventhough, there is no class
+                   involved, the code for open was actually implemented inside Python and calling some init-like function to create 
+                   an object of file. Next, how can we check that there is a curse word in our text? There is a module in Python
+                   called,URL lib, which helps us get information from the internet. It has a function called, URL open, which takes
+                   in a link to a website. The function URL open, help us make a connection, to the website which is given by us for
+                   profanity check. So, much like webbrowser,time and OS, urllib is also a module or a file in Python. And urlopen is
+                   a function inside urllib module. This module provides a high-level interface for fetching data across the World
+                   Wide Web. In particular, the urlopen() function is similar to the built-in function open(), but accepts Universal
+                   Resource Locators (URLs) instead of filenames.
+                </p>
+	</div></div>
+	<div class = "concept">
+	   <h2 class = "concept-title"> Make Classes: Movie Website  </h2>
+	   <div class = "concept-description">
+		<p> 
+                   Certain functions and variables are related to each other very closely, and need to interact with each
+                   other a lot. For example, imagine you want to build movie website of favorite movies and if you click on
+                   one of them its trailer will play. It has all the information about movie(i.e. variables) like title,
+                   youtube_trailer,storyline,poster_image,reviews etc.It also has functions associated with it. A function
+                   only makes one output, not four or five, or five hundred. What is needed is a way to group functions and
+                   variables that are closely related into one place so that they can interact with each other. Without
+                   classes, you need to write a whole heap of code for each different movie. This is a pain, seeing that
+                   all movie share common features, it is just that some have changed properties. The ideal situation would
+                   be to have a design of your basic movie . Each time you create a new movie name, simply specify its
+                   attributes. Wouldn't it be better if we were to just take our existing movie, and then tack the code for
+                   the another movie? These problems that a thing called object-oriented-programming solves. 
+		</p>
+        	 <p>
+                    No code is run when you define a class - you are simply making functions and variables. The function
+                    called __init__ is run when we create an instance of movie. It has two underscore on both sides of the
+                    word init. The name init, is essentially reserved in python and this is a special function or method.
+                    It intializes or creates space in memory. To remember details like title,storyline etc, for new movies
+                    that we are about to create. init takes a arguments,and is always the python keyword, self.  self is
+                    how we refer to things in the class from within itself. self is the first parameter in any function
+                    defined inside a class. Any function or variable created on the first level of indentation (that is,
+                    lines of code that start one TAB to the right of where we put class Shape is automatically put into
+                    self. To access these functions and variables elsewhere inside the class, their name must be preceded
+                    with self and a full-stop (e.g. self.variable_name).
+		</p>
+		 <table>
+			<tr>
+			<td>
+		<p>   import webbrowser<br>class movie():<br> def __init__ (self, movie_title, movie_storyline,
+                      poster_image, trailer_youtube):<br>&nbsp;&nbsp;&nbsp; self.title = movie_title  # initialize these
+                                                                    variables, with information init is going to receive
+                      <br>&nbsp;&nbsp;&nbsp; self.storyline = movie_storyline <br>&nbsp;&nbsp;&nbsp; self.poster_image_url
+                      = poster_image <br>&nbsp;&nbsp;&nbsp; self.trailer_youtube_url= trailer_youtube <br>
+                     
+                      def show_trailer(self):<br> &nbsp;&nbsp;&nbsp; webbrowser.open(self.trailer_youtube_url)<br>
+                      toy_story = Movie("Toy Story", "A Story of a boy and his toys that come to life" ,<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                      "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",<br> 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      "https://www.youtube.com/watch?v=vwyZH85NQC4")<br>
+                       print(toy_story.storyline) # will print : A Story of a boy and his toys that come to life<br>
+                       toy_story.show_trailer() </p>
+                           </td>
+                           </tr>
+                    </table>
+                 <p>
+                    In above code, first we define class and then, we call that function.To define function show_trailer(),
+                    this function as its name suggests, will open a browser and play the trailer of a movie. A function
+                    that is defined inside a class and is associated with an instance is called an instance method.
+                 </p>
+	</div></div>
+	<div class = "concept">
+	   <h2 class = "concept-title"> Make Classes: Advanced Topic  </h2>
+	   <div class = "concept-description">
+	<p> <b> Vocabulary Words </b> </p>
+	     <ul>
+		<li><b> class:</b> Class can have both data and methods. You can think class as a blueprint. We can create
+                        multiple objects(instances) of a class. The attributes are data members (class variables and
+                        instance variables) and methods, accessed via dot notation. </li>
+		<li><b> constructor: When we create an instances or a objects of a class, the classes constructor gets called.</li>
+                <li><b> class variables :</b> A variable that is shared by all instances of a class. Class variables are
+                        defined within a class but outside any of the class's methods. Class variables are not used as
+                        frequently as instance variables are. </li>
+	        <li><b> instance or object:</b> A unique instance of a data structure that's defined by its class. An
+                        object comprises both data members (class variables and instance variables) and methods. </li>
+	        <li><b> instance variables:</b> A variable that is defined inside a method and belongs only to the current
+                        instance of a class.   </li>
+	        <li><b> Method:</b> A special kind of function that is defined in a class definition. The first method
+                        __init__() is a special method, which is called class constructor or initialization method that
+                        Python calls when you create a new instance of this class.  </li>
+                <li><b> self:</b> You declare other class methods like normal functions with the exception that the first
+                        argument to each method is self. Python adds the self argument to the list for you; you do not
+                        need to include it when you call the methods. </li>
+	        <li> <b> instance method:</b> A function that is defined inside a class and is associated with an
+                         instance is called an instance method. </li>
+	        <li><b> inheritance:</b> The transfer of the characteristics of a class to other classes that are derived
+                        from it. e.g. The child class inherits the attributes of its parent class, and you can use those
+                        attributes as if they were defined in the child class. A child class can also override data
+                        members and methods from the parent. </li>
+                </ul>
+		</div></div>
+       </body>
+</html>

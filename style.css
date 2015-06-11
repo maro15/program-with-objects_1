@@ -1,0 +1,53 @@
+h1 {
+  font-size:60px;
+  text-align:center;
+  color:Indigo;
+}
+
+body {
+	padding:20px 10px;
+	font-family: Arial;
+	max-width:2000px;
+	margin:0 auto; 
+	font-size:1.2em;
+}     
+
+.concept-description {
+	padding:4px;
+	margin:10px auto;
+	border-radius:10px;
+	color:Black;
+}
+
+h2 {
+	background-color:DarkSlateblue;
+	border-radius: 20px;
+	color:White;
+	padding:20px;
+	margin:15px auto;
+}
+
+.concept {
+	
+	padding:4px;
+	margin:10px;
+	border-radius:10px;
+	color: Black;
+}
+
+h3 {
+   text-align : center;
+   color: DarkSlateBlue;
+}
+
+table {
+	display: table;
+        border-spacing: 5px;
+}    
+
+td {
+    
+    height: 10px;
+    vertical-align: top;
+    padding: 10px ;
+}
